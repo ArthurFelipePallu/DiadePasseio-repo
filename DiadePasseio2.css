@@ -1,0 +1,125 @@
+body{background-color: rgb(255, 251, 37);width: 100%; min-width: 960px;margin: 0 auto;}
+
+header{background-color: rgba(123, 224, 255);width: 100%;height:75px; top: 0%;z-index: 10;position: fixed;}
+
+header h1 {vertical-align: middle;float: left;margin-left: 15%;color: blueviolet;text-shadow:3px 3px rgb(255, 140, 8);}
+header #pesquisa{float: left ;width: 20%;height: 50%;margin-left: 3%;margin-top: 1%; }
+header label{display: block; position: relative;border: 3px solid #666; background-color: cadetblue;background-image: url(imgs/search.png);background-size: 100%; width: 2%;height: 50%; float: left;margin-top: 1%;}
+header label:hover{ background-color: rgb(121, 247, 252);}
+header label input[type="submit"]{color:rgba(0, 0, 0, 0);background-color: rgb(0, 0, 0,0); width: 100%;height: 100%;}
+header #Pesquisados {float: left;margin-left: 3%;margin-top: 1%; background-color: antiquewhite; width: 7%;height: 60%;}
+header #Pesquisados p {display: inline-block;font-size: larger; margin: 0 auto;text-align: center;}
+header #Pesquisados ul{list-style: none;display:none;margin:  0 auto;padding: 0; padding-top: 10px;width: 175px;}
+header #Pesquisados ul li{width: 175px;height: 30px;background-color: rgb(19, 165, 44); border: 1px solid #666;margin-top: -1px;font-size: large;text-align: center;}
+header #Pesquisados ul li:hover{background-color: rgb(17, 128, 35);}
+header #Pesquisados:hover ul{display: block;}
+header #login{background-color: brown;width: 11%;height: 60%; margin-top: 1%;margin-left: 5%;float: left; align-content: center;position: relative;}
+header #login a{color: black; display: inline-block;font-size:larger;text-decoration: none;margin-top: 5%;margin-left: 5%;}
+header #login::after{content: "";width: 50px;height: 100%; background-image: url(imgs/doghouseicon.png);background-size: cover; right: 1%;position: absolute;}
+
+main{background-color: blanchedalmond;position: relative;margin-top: 75px; }
+
+#BottomHeader{width: 100%;height: 50px; background-color: rgba(153, 50, 204);margin-top: 0;}
+#BottomHeader nav{ background-color: darkorange; width: 60%;height: 90%;margin-left: 20%;margin-top: 5%;}
+#BottomHeader nav ul{list-style: none; margin: 0;padding: 0;}
+#BottomHeader nav ul li{float: left; position: relative;width: 80px;height:80%;background-color: darkgoldenrod;margin-left: 10%;margin-top:1.3%; }
+#BottomHeader nav ul li a{display: inline-block; text-decoration: none;margin:auto;color: darkslategray; width: 100%;height: 100%; }
+#BottomHeader nav ul li a:hover{background-color:rgb(184, 146, 49) ;}
+
+#BottomHeader nav ul li:hover ul{display: block; }
+
+#BottomHeader nav ul li ul{list-style: none; margin: 0;padding: 0; display: none;width: 100px;position: absolute; padding-top: 10px;z-index: 5;}
+#BottomHeader nav ul li ul li{width: 100px;height: 40px;border: 1px solid grey; }
+#BottomHeader nav ul li ul li a{display: inline-block;width: 100%;height: 100%; text-decoration: none;margin:auto;color: darkslategray; }
+
+#BottomHeader nav ul li ul li:hover #petsection{display: block;}
+#BottomHeader nav ul li ul li #petsection{display: none;background-color: azure;width:200px;height: 300px;}
+#BottomHeader nav ul li ul li #petsection ul{margin-left: 0%;}
+
+
+
+
+#noticias{width: 100%;height: 500px; background-color: lightcoral;margin-top: 5%;}
+#noticia_central{width: 70%;height: inherit; background-color: darkred;margin-left: 15%; margin: 0 auto;}
+.coluna{width: 30%;height: inherit; }
+#col1{ background-color: darkkhaki;         float: left;  }
+#col2{background-color: rgb(107, 189, 121); float: right; overflow: scroll;   }
+#col3{background-color: rgb(179, 107, 189); margin: 0 auto;    }
+#noticias aside{width:10%; height: inherit; background-color: lightseagreen;}
+#aside1{float: right;}
+#aside2{float: left;}
+
+
+#col2 .news{width: 98%;height:41%;background-color: rgb(192, 50, 205); margin:1% 1%;position: relative; background-size:100% 100% ;}
+#col2 .news header{background-color:thistle;width:fit-content;height: fit-content;font-size: 150%;position: absolute;left: 0.5%;top: 85.5%;}
+#col2 .news .newsdata{background-color: thistle;width:fit-content;font-size: 100%;position: absolute;right: 0.5%;bottom: -18%;}
+#col2 .news p{background-color: rgba(0, 0, 0, 0);color: rgba(255, 255, 255, 0); width:95%;text-align: center; height: fit-content; font-size: 100%;position: absolute;left: 2.5%;bottom: 7%;}
+#col2 .news p:hover{background-color: rgba(0, 0, 0, 1);color: rgba(255, 255, 255, 1);}
+#news1{background-image: url(imgs/vacinasnews.png); }
+#news2{background-image: url(imgs/petshopnews.jpg); }
+#news3{background-image: url(imgs/procuramaxnews.jpg); }
+#news4{background-image: url(imgs/adocaonews.jpg); }
+
+#col3 ul {background-color: lightslategrey;width: 100%; height: 100%;margin: 0;padding: 0;}
+#col3 ul li{width: 100%; height: 19.2%;position: relative; background-color: rgba(50, 205, 50,0.4);margin-top: 1%; list-style-type: none;text-align:center; font-size:250%;}
+#col3 ul li:before{content:"";position: absolute;top: 1%; left: 2%; display: inline-block;height:100%;width:100%;background-size: contain;background-repeat: no-repeat;}
+
+#col3 ul li:first-child:before{background-image: url(imgs/dogtoyicon.png);}
+#col3 ul li:nth-child(2):before{background-image: url(imgs/dogremedyicon.png);}
+#col3 ul li:nth-child(3):before{background-image: url(imgs/dogfoodicon.jpg);}
+#col3 ul li:nth-child(4):before{background-image: url(imgs/dogscisoricon.png);}
+#col3 ul li:last-child:before{background-image: url(imgs/dogleashicon.jpg);}
+
+.listinfo{ width: 100%; height: 100%;font-size: large;margin-top: -11.5%; position: absolute; z-index: 2;background-color: rgba(0, 0, 0,0);color: rgba(255, 255, 255, 0);}
+.listinfo:hover{background-color: rgb(0, 0, 0);color: white;}
+
+
+#form h1,#form p{text-align: center; font-size:xx-large; color: blueviolet;}
+form{text-align: center; background-color: aliceblue;width: 100%;height: 800px; overflow:scroll;}
+input[type="number"],[type="text"]{text-align: center;}
+
+.janela {width: 30%; height:40%;  float: left; margin:1.5% 1.5%;}
+
+
+#especie{background-color:cadetblue; }
+#especie h2{margin-top: 0%;}
+#imgfield{margin-left: 12%; width: 75%; height: 75%; background-color: lawngreen;}
+.MyespecieSlides{width:50%; display: none; margin: auto; }
+.buttondisplayleft{float: left; height:100%;}
+.buttondisplayright{float: right;height:100%;}
+
+#basics{background-color: brown;}
+#basics input[type="number"]{width: 5%; height: 5%; font-weight: bold;font-family: fantasy;}
+
+
+/*     quase la
+#comportamento{width: 30%; height: 150px; margin-left: 10%;background-color: chocolate;}
+#comportamento input[type="checkbox"]{visibility: hidden;}
+#comportamento label{ display: block; border: 4px solid #666;width: fit-content;}
+#comportamento input[type="checkbox"]:checked+label{border-color: #ccf; background-color: turquoise;} */
+#comportamento{background-color: chocolate; text-align: center;}
+#comportamento h2{margin-top: 0%;}
+#comportamento input[type="checkbox"]{visibility: hidden;}
+#comportamento input[type="checkbox"]:checked+label{border-color: #ccf; background-color: turquoise;}  
+#comportamento label{ display: block; border: 1px solid #666;width: 35%;height: fit-content; float: left;font-size:large;margin-left: 8%;margin-bottom: 3%; background-color: crimson;}
+
+
+#raca{background-color: chocolate;}
+.imgfieldraca{margin-left: 12%; width: 75%; height: 75%; background-color: lawngreen;}
+.MyracaSlides{width:50%; display: none; margin: auto; }
+
+
+#geral{background-color: chocolate;}
+
+
+/* Esta versão funcionou em centralizar a imagem e o texto por ter usado textalign, dentro da label a imagem foi considerada
+junto como um texto e tudo se alinhou perfeitamente */
+#form_porte{background-color: chocolate;}
+#form_porte h2{margin-top: 0%; background-color:darkblue;}
+.porte{width: 35%;height: 35%;background-color: cornflowerblue; float: left;transform: translateX(35%);margin: .5%; }
+.porte input[type="radio"]{visibility: hidden;}
+.porte label{ display: block; position: relative;;border: 1px solid #666; background-color: cadetblue; width: 100%;height: 100%;transform: translateY(-20%); margin:auto;}
+.porte input[type="radio"]:checked+label{border-color: #ccf; background-color: turquoise;}
+.porte img{height: 60%;}
+
+
