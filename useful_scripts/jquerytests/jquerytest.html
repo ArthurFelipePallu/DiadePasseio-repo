@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <meta charset="UTF-8">
+        <style>
+
+        </style>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            // Scripts
+            $(function(e){
+               $("ul").css('margin-top','30px').css('border','1px');
+               $("ul li").css('font-size','20px');
+               $("ul li a").css('text-decoration','none');
+               $("ul li[class='verm']").css('color','red');
+               $("ul li.verd").css('color','green');
+               $("ul li[id='text1']").css('text-decoration','underline');
+               $("ul li#text2").css('background-color','#ff9');
+               $("ul li[id]").after("Este texto pertence a uma id");
+               $("ul li[class]").after("Este texto pertence a uma classe");
+
+               $("li a[href$='.pdf']").after("**");
+               $("li a[href$='.zip']").before("<img src='imgs/zip_icon.png'>");
+               
+               $("ul#ullista").prepend("<li>Este é um novo texto e vai por primeiro</li>");
+               $("ul#ullista").append("<li>Este é um novo texto e vai por ultimo</li>");
+
+            });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="https://www.google.com.br/">Link to Google</a></li>
+            <li><a href="https://www.google.com.br/">Another link to Google</a></li>
+        </ul>
+        <ul id="ullista">
+            <li class="verm">este texto deve ser vermelho</li>
+            <li class="verd">enquanto este aqui é verde</li>
+            <li id="text1">este aqui não é amarelo</li>
+            <li id="text2">e este não tem background azul</li>
+        </ul>
+        <ul>
+            <li><a href="arquivo1.zip">arquivo1.zip</a></li>
+            <li><a href="arquivo1.pdf">arquivo1.pdf</a></li>
+            <li><a href="arquivo2.zip">arquivo2.zip</a></li>
+            <li><a href="arquivo2.pdf">arquivo2.pdf</a></li>
+        </ul>
+    </body>
+</html>

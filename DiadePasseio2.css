@@ -15,7 +15,7 @@ header #Pesquisados ul li:hover{background-color: rgb(17, 128, 35);}
 header #Pesquisados:hover ul{display: block;}
 header #login{background-color: brown;width: 11%;height: 60%; margin-top: 1%;margin-left: 5%;float: left; align-content: center;position: relative;}
 header #login a{color: black; display: inline-block;font-size:larger;text-decoration: none;margin-top: 5%;margin-left: 5%;}
-header #login::after{content: "";width: 50px;height: 100%; background-image: url(imgs/doghouseicon.png);background-size: cover; right: 1%;position: absolute;}
+header #login::after{ content: "";width: 50px;height: 100%; background-image: url(imgs/doghouseicon.png);background-size: cover; right: 1%;position: absolute;}
 
 main{background-color: blanchedalmond;position: relative;margin-top: 75px; }
 
